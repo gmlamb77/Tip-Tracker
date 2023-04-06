@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  padding: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgb(40, 187, 255);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.todaysTips {
+display: flex;
+flex-direction: column;
+padding: 1rem;
+width: 100%;
+height: 100%;
+align-items: center;
+}
+
+.todaysTips form {
+  display: flex;
+  flex-direction: column;
+  width: clamp(200px, 75%, 700px);
+  height: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.todaysTips label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: clamp(200px, 75%, 600px);
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.todaysTips input {
+  padding: .5rem;
+  text-align: center;
+  margin: .5rem 0 .5rem 0;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+}
+
+.todaysTips input:focus {
+  border-color:rgb(101, 206, 255);
+}
+
+.todaysTips input::placeholder {
+  opacity: 25%;
+}
+
+#todaysTips-SubmitBtn {
+  padding: .7rem;
+  background-color: rgb(101, 206, 255);
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 1rem;
+  color: rgb(0, 129, 194);
+  transition: ease-in-out .1s;
+  cursor: pointer;
+  border: none;
+}
+
+#todaysTips-SubmitBtn:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+
+.totalTips {
+  height: 100%;
+  background-color: white;
+  width: clamp(200px, 75%, 700px);
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
